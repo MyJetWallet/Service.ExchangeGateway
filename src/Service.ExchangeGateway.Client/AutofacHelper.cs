@@ -11,7 +11,7 @@ namespace Service.ExchangeGateway.Client
         {
             var factory = new ExchangeGatewayClientFactory(grpcServiceUrl);
 
-            builder.RegisterInstance(factory.GetExchangeGateway()).As<IHelloService>().SingleInstance();
+            builder.RegisterInstance(factory.GetExchangeGateway()).As<IExchangeGateway>().SingleInstance();
         }
     }
 }
