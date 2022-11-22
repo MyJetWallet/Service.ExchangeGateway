@@ -11,6 +11,6 @@ namespace Service.ExchangeGateway.Client
         {
         }
 
-        public IHelloService GetHelloService() => CreateGrpcService<IHelloService>();
+        public IExchangeGateway GetExchangeGateway() => CreateGrpcService<IExchangeGateway>();
     }
 }

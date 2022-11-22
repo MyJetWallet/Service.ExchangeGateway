@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Core;
 using Autofac.Core.Registration;
+using Service.Fireblocks.Signer.Client;
 
 namespace Service.ExchangeGateway.Modules
 {
@@ -8,7 +9,7 @@ namespace Service.ExchangeGateway.Modules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
+            builder.RegisterFireblocksSignerClient(Program.Settings.FireblocksSignerGrpcServiceUrl);
         }
     }
 }

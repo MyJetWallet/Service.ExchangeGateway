@@ -29,7 +29,7 @@ namespace Service.ExchangeGateway
         {
             app.ConfigureJetWallet(env, endpoints =>
             {
-                endpoints.MapGrpcSchema<HelloService, IHelloService>();
+                endpoints.MapGrpcSchema<Services.ExchangeGateway, IExchangeGateway>();
             });
         }
 

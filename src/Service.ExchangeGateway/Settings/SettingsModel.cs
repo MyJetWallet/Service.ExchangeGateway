@@ -13,5 +13,11 @@ namespace Service.ExchangeGateway.Settings
 
         [YamlProperty("ExchangeGateway.ElkLogs")]
         public LogElkSettings ElkLogs { get; set; }
+
+        [YamlProperty("ExchangeGateway.FireblocksSignerGrpcServiceUrl")]
+        public string FireblocksSignerGrpcServiceUrl { get; set; }
+
+        [YamlProperty("ExchangeGateway.BinanceExchangeId")]
+        public string BinanceExchangeId { get; set; }
     }
 }
