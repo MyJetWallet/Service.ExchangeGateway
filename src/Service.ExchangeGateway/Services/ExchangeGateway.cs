@@ -184,7 +184,7 @@ namespace Service.ExchangeGateway.Services
                     FromExchangeId = Program.Settings.BinanceExchangeId,
                     ForceSweep = true,
                     DestinationVaultAccountId = request.VaultAccountId.ToString(CultureInfo.InvariantCulture),
-                    TreatAsGrossAmount = true,
+                    TreatAsGrossAmount = false,
                 });
 
                 if (response.Error != null)
